@@ -1,0 +1,308 @@
+
+/* Import Fontnya */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navbar */
+.bg-img{
+    background-image: url("img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    /* background-color: #7f5857; */
+    background-color: transparent;
+}
+
+li, a, button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+.navte{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    text-shadow: 3px 3px #4e2f2f;
+    text-align: left;
+  } 
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #4e2f2f;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(255, 167, 66, 0.582);
+}
+
+/* Line terakhir Navbar */
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Container */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 99vh;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    /* transform: translate(-50%, -50%); */
+    padding: 10% 10%;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 20px;
+    text-shadow: 3px 3px #4e2f2f;
+    text-align: left;
+}
+  
+/* Line terakhir Container */
+
+
+/* Main Content */
+.maincard{
+    background-image: url("img/bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    padding-bottom: 30px ;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+  }
+  
+   .maincard h2{
+    position: absolute;
+    color:white;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 3px 3px #4e2f2f;
+    text-align: left;
+  }
+   
+  .card{
+    cursor: pointer;
+    position: relative;
+    background:rgba(11,18,23,0.6);
+    border: 1px solid rgb(27, 24, 24);
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 150px;
+    border: 1px solid #101311;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 0.6s ease;
+  }
+  
+  .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateY(-10px);
+  }
+  
+  .maincard .card .content{
+    text-align: start;
+    max-height: 250px;
+    border-radius: 4px;
+  }
+  
+  .maincard .card .deskrip{
+    padding: 12px 0;
+  }
+  
+  .card .deskrip span{
+    padding: 12px 0px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  
+  .card .deskrip ol{
+    color: #c0c0c0;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 650px) {
+    .maincard{
+      padding: 5px;
+  
+    }  
+    .maincard .card {
+      text-align: start;
+      display: grid;
+      grid-template-columns: auto;
+      max-height: 350px;
+      padding: 10px;
+    }
+  }
+  @media (max-width: 390px){
+    .maincard .card {
+      margin-top: 120px;
+    }
+  }
+/* Line terakhir Main Content */
+.about-wrapper{
+    height: 100vh;
+}
+.about-left{
+    background-color: #0b1217;
+    background-image: linear-gradient(50deg, #0b1217 0%, #23282c 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff
+}
+.about-left-content > div{
+    background: #0b1217;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    
+    border-radius: 12px 12px 0 0;
+}
+.about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    border-radius: 12px;
+    width:80%;
+}
+.about-img img{
+    display: block;
+    width: 210px;
+}
+.about-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.about-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #131c22;
+}
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+.icons{
+    background: #17232b;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: 0 0 10px 10px;
+}
+.icons li{
+    list-style-type: none;
+    background: #0b1217;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover{
+    background: #edffec;
+    color: #000;
+}
+
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+    }
+}
+
+.footer{
+    background-color: #100e0f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.darkmode{
+  align-items: flex-end;
+  background-color: transparent;
+  align-self: center;
+  text-align: right;
+}
